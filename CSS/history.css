@@ -285,6 +285,7 @@ h3{
 
 /* Dark Mode Button */
 
+/*dark-mode button */
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -295,7 +296,7 @@ body.dark-mode {
     top: 150px;
     right: 5px;
     padding: 10px 15px;
-    background-color: #3451e1;
+    background-color: #4b14aa;
     font-size: 15px;
     color: white;
     border: none;
@@ -317,6 +318,7 @@ body.darkmodebutton .reaction-buttons {
 .darkmodebutton:hover {
     background-color: #5766c5;
 }
+
 /*Like and Dislike Button */
 
 .reaction-buttons {

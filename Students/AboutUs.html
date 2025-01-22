@@ -68,13 +68,14 @@
                         </ul>
                 </li>
 
-                <li><a href="../Students/AboutUs.html" class="navbar__links">About Us</a></li>
+                <li><a href="/Students/AboutUs.html" class="navbar__links">About Us</a></li>
             </ul>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <button type="button">Go</button>
             </div>
         </nav>
+        <button class="darkmodebutton" onclick="toggleDarkMode()">Dark Mode</button>
     </header>
     <div class="news-card">
         <section>
@@ -129,8 +130,15 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 FairyTopian News. All rights reserved.</p>
+        <p>&copy; 2025 FairyTopian News. All rights reserved.</p>
     </div>
 </footer>
+<script> 
+
+
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    } 
+    </script>
 </body>
 </html>
