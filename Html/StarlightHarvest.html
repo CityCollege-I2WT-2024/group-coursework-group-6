@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FairyTopian News</title>
+        <link rel="icon" href="../image/favicon.ico" type="image/x-icon"> <!--Implemented by Zoey-->
+        <link rel="stylesheet" href="../CSS/Space.css">
+        <meta name="description" content="FairyTopian News - Discover parallel universes and cutting-edge scientific discoveries.">
+        <meta name="author" content="Yeva Hakobyan">
+        <style>
+            .resource-calculator {
+                margin-top: 40px;
+                padding: 20px;
+                background-color: #f8f8f8;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .resource-calculator label {
+                display: block;
+                margin: 10px 0 5px;
+                font-size: 1.1em;
+            }
+
+            .resource-calculator input, .resource-calculator select, .resource-calculator button {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                font-size: 1em;
+            }
+
+            .resource-calculator button {
+                background-color: navy;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .resource-calculator button:hover {
+                background-color: rgb(37, 37, 238);
+            }
+
+            #result {
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #333;
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body> <!--File Written by Yeva Hakobyan-->
+        <header class="header">
+            <!-- Logo -->
+            <a href="../Index.html"><img src="../image/FairyTopia.png" id="Logo"></a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776; <!-- Unicode character for the hamburger icon -->
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li class="dropdown-button">
+                        <a href="BingoRing.html" class="navbar__links">Crime</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="BingoRing.html">Illegal Bingo Ring</a></li>
+                            <li><a href="VacuumSmuggler.html">The Vacuum Smuggler</a></li>
+                            <li><a href="GoldfishHacker.html">The Goldfish Hacker</a></li>
+                            <li><a href="PigeonHeist.html">A Pigeon Heist</a></li>
+                            <li><a href="CheeseSmuggling.html">Cheese Smuggling!</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="FakingBreakup.html" class="navbar__links">Showbizz</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="FakingBreakup.html">Faking Breakup</a></li>
+                            <li><a href="HauntedMansion.html">Haunted Mansion</a></li>
+                            <li><a href="LuxuryWedding.html">Luxury Wedding</a></li>
+                            <li><a href="SecretFeud.html">Secret Feud</a></li>
+                            <li><a href="SurprisePregnancy.html">Surprise Pregnancy</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="BasketballStar.html" class="navbar__links">Sports</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="BasketballStar.html">Basketball Star</a></li>
+                            <li><a href="DaveOrDazzle.html">Dave or Dazzle</a></li>
+                            <li><a href="KangarooBoxing.html">Kangaroo Boxing</a></li>
+                            <li><a href="ToTheMoon.html">To the Moon</a></li>
+                            <li><a href="ZeroGravityJenga.html">Zero Gravity Jenga</a></li>                       
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="MrPickles.html" class="navbar__links">History and Politics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="MrPickles.html">Mr Pickles</a></li>
+                            <li><a href="PalinandtheGreatCommunistPotato.html">Palin and the Great Communist Potato</a></li>
+                            <li><a href="TheGreatKangarooSmackdown.html">The Great Kangaroo Smackdown</a></li>
+                            <li><a href="TheRoyalMiscommunication.html">The Royal Miscommunication</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="AetheriaParallelEarth.html" class="navbar__links">Science And Space</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="AetheriaParallelEarth.html">"The <strong>NEW</strong> Earth"</a></li>
+                            <li><a href="CosmicMessage.html">"Cosmic Message?"</a></li>
+                            <li><a href="InterdimensionalRiftPortal.html">"Portal to Parallel Universes"</a></li>
+                            <li><a href="StarlightHarvest.html">"The Starlight Harvest"</a></li>
+                            <li><a href="TheFirstArtificialStar.html">"The first Artificial Star"</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Students/AboutUs.html" class="navbar__links">About Us</a></li>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button type="button">Go</button>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <div class="content-container">
+            <h1 class = "clearfix">
+                "Starlight Harvest: Asteroids Filled with Unimaginable Resources Discovered!"
+            </h1>
+            <article>
+                <h3>In Tavush, Armenia 2087</h3><!--Date and Place-->
+                <p>
+                    In a stunning discovery, astronomers have identified a group of asteroids that could be worth trillions of dollars—filled with precious metals, rare earth elements, and even elements never before seen on Earth. Dubbed the "Starlight Harvest," these asteroids are rich in resources that could revolutionize everything from technology to space exploration. What makes this find so extraordinary is that many of the elements are not only rare on Earth, but they could potentially be the key to unlocking advanced space travel, or even creating new forms of energy.
+                </p>
+                <p>
+                    These asteroids, located in the far reaches of our solar system, have long been considered distant and unreachable. But with advancements in spacecraft technology, experts believe it could be possible to harvest materials from these celestial bodies within the next few decades. The potential for this discovery is immense—imagine a world where we no longer depend on Earth's resources for critical technologies, or where rare elements needed for quantum computing and advanced space travel are in limitless supply. The economic and scientific possibilities are boundless.
+                </p>
+                <p>
+                    However, the race to mine these asteroids could lead to unforeseen challenges. Who will own these celestial resources? Will the scramble for asteroid mining spark a new space race, with countries and private companies vying for control of the cosmos? And what impact will asteroid mining have on the future of space exploration and the preservation of our solar system? As scientists and corporations prepare to take the next step, the world watches with excitement—and anxiety—as we stand on the brink of an interstellar gold rush.
+                </p>
+            </article>
+
+            <div class="image-container">
+            <img src = "../image/asteroids.jpg" width = "285" class = "article-images">
+            <img src = "../image/asteroid2.jpg" width = "285" class = "article-images">
+            </div>
+            <hr>
+
+            <!--Calculator-->
+
+            <section class="resource-calculator">
+                <h2>Estimate Asteroid Mining Resources</h2>
+                <p>Enter the number of asteroids you'd like to mine, and see the estimated value of resources!</p>
+                <label for="numAsteroids">Number of Asteroids:</label>
+                <input type="number" id="numAsteroids" min="1" value="1">
+                
+                <label for="metalType">Select a Metal Type:</label>
+                <select id="metalType">
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                    <option value="rareEarth">Rare Earth Elements</option>
+                </select>
+            
+                <button id="calculateBtn">Calculate Value</button>
+                
+                <p id="result"></p>
+            </section>
+            
+
+            <!-- Like and Dislike Buttons -->
+            <section class="reaction-buttons">
+                <button class="like-btn">👍 Like</button>
+                <span class="like-count">0</span>
+                <button class="dislike-btn">👎 Dislike</button>
+                <span class="dislike-count">0</span>
+            </section>
+            <!-- Comments Section -->
+            <div class="reader-comments">
+                <h1>Write Us Your Comment </h1>
+                <textarea id="newComment" placeholder="Type your comment here"></textarea>
+                <button id="addComment">Add Comment</button>
+                <div id="commentSection">
+                    <h3>Comment Section</h3>
+                </div>
+            </div>
+
+            <table><!--Table With Reporter's Comments-->
+                <thead>
+                    <tr>
+                        <th>REPORTER</th>
+                        <th>COMMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Daniel Alvarez</td>
+                        <td><em>"Advancements in spacecraft technology make this achievable, but how realistic is it to scale up asteroid mining operations?"</em></td>
+                    </tr>
+                    <tr>
+                        <td>Emma Hartfield</td>
+                        <td><em>"We've exploited Earth's resources to the brink—let's hope we don't repeat the same mistakes with the solar system."</em></td>
+                    </tr>
+                    <tr>
+                        <td>Ravi Patel</td>
+                        <td><em>"We must think long-term. Mining these asteroids may help humanity, but what will it mean for preserving the solar system for future generations?"</em></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>About FairyTopian News</h4>
+                    <p>FairyTopian News brings you fascinating and out-of-this-world stories, keeping you informed and inspired every day. Explore the mysteries of the universe with us!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../Index.html">Home</a></li>
+                        <li><a href="../Html/AetheriaParallelEarth.html">Science and Space</a></li>
+                        <li><a href="../Html/BingoRing.html">Crime</a></li>
+                        <li><a href="../Students/AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.instagram.com/citycollegethess/"><img src="../image/Instagram.png" alt="Instagram" class = "logo-image"></a></li>
+                        <li><a href="https://github.com/andoj3/I2WT-Website-Group6/tree/main/ScienceSpace"><img src="../image/GitHub.png" alt="GitHub" class = "logo-image"></a></li> 
+                    </ul>
+                </div>
+                <div class="footer-section subscribe">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Get fresh <strong>FairyTopian</strong> news every week!</p>
+                    <form action="#" method="POST">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FairyTopian News. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>  //JS for making the subscription box interactive
+            document.addEventListener('DOMContentLoaded', function() {
+            //selects the CSS selector ".footer-section-subscribe"
+            const subscribeBox = document.querySelector('.footer-section.subscribe');
+            
+            //mouseenter event is triggered when hovering over the box
+            subscribeBox.addEventListener('mouseenter', function() {
+                //css class hovered
+            subscribeBox.classList.add('hovered'); 
+            });
+        
+            //mouseleave event is triggered, when the mouse is no longer on the subscription box
+            subscribeBox.addEventListener('mouseleave', function() {
+            subscribeBox.classList.remove('hovered');
+            });
+        });
+
+    //Comment Section 
+    document.getElementById('addComment').addEventListener('click', function () {
+    //acquire the text value
+    const commentText = document.getElementById('newComment').value;
+
+    if (commentText.trim() !== "") { 
+        // div for comment
+        const commentDiv = document.createElement('div');
+        commentDiv.textContent = commentText;
+
+        // comment style to the text
+        commentDiv.classList.add('comment');
+
+        // Append comments to comment section
+        document.getElementById('commentSection').appendChild(commentDiv);
+
+        // New value of text after press
+        document.getElementById('newComment').value = "";
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const likeButtons = document.querySelectorAll('.like-btn');
+    const dislikeButtons = document.querySelectorAll('.dislike-btn');
+    const likeCounts = document.querySelectorAll('.like-count');
+    const dislikeCounts = document.querySelectorAll('.dislike-count');
+
+    // Set random counts on page load
+    dislikeCounts.forEach(count => {
+        const dislikeCount = Math.floor(Math.random() * 100);
+        count.textContent = dislikeCount;
+    });
+
+    likeCounts.forEach((count, index) => {
+        const dislikeCount = parseInt(dislikeCounts[index].textContent);
+        const likeCount = Math.floor(Math.random() * 100) + dislikeCount;
+        count.textContent = likeCount;
+    });
+
+    likeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const likeCount = likeCounts[index];
+            const dislikeButton = dislikeButtons[index];
+            const dislikeCount = dislikeCounts[index];
+
+            if (btn.classList.contains('reaction-active')) {
+                likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                btn.classList.remove('reaction-active');
+            } else {
+                likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                btn.classList.add('reaction-active');
+                if (dislikeButton.classList.contains('reaction-active')) {
+                    dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                    dislikeButton.classList.remove('reaction-active');
+                }
+            }
+        });
+    });
+
+    dislikeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const dislikeCount = dislikeCounts[index];
+            const likeButton = likeButtons[index];
+            const likeCount = likeCounts[index];
+
+            if (btn.classList.contains('reaction-active')) {
+                dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                btn.classList.remove('reaction-active');
+            } else {
+                dislikeCount.textContent = parseInt(dislikeCount.textContent) + 1;
+                btn.classList.add('reaction-active');
+                if (likeButton.classList.contains('reaction-active')) {
+                    likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                    likeButton.classList.remove('reaction-active');
+                }
+            }
+        });
+    });
+});
+
+
+//humburger functionality
+//selecting the hamburger elemenent with the CSS selector
+const hamburger = document.querySelector('.hamburger');
+//selecting the navbar elemenent with the CSS selector
+const navbar = document.querySelector('.navbar');
+
+//adding a click event listener to the hamburger variable
+hamburger.addEventListener('click', () => {
+navbar.classList.toggle('open');
+});
+
+
+//calculator js
+document.getElementById('calculateBtn').addEventListener('click', function() {
+    // get user inputs 
+    const numAsteroids = document.getElementById('numAsteroids').value;
+    const metalType = document.getElementById('metalType').value;
+
+    // defining resource values for each metal type (per asteroid)
+    const resourceValues = {
+        gold: 100000, // Gold per asteroid in dollars
+        platinum: 200000, // Platinum per asteroid in dollars
+        rareEarth: 50000 // Rare Earth Elements per asteroid in dollars
+    };
+
+    // Calculating the total value based on inputs
+    const totalValue = numAsteroids * resourceValues[metalType];
+    
+    // Displaying the result
+    document.getElementById('result').textContent = `Estimated value: $${totalValue.toLocaleString()} for ${numAsteroids} asteroids.`;
+});
+
+
+        </script>
+        
+    </body>
+</html>

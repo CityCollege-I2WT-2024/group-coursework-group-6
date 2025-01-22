@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FairyTopian News</title>
+        <link rel="icon" href="../image/favicon.ico" type="image/x-icon"> <!--Implemented by Zoey-->
+        <link rel="stylesheet" href="../CSS/Space.css">
+        <meta name="description" content="FairyTopian News - Discover parallel universes and cutting-edge scientific discoveries.">
+        <meta name="author" content="Yeva Hakobyan">
+        <style>
+            /*specific css for the alien code section only*/
+            .alien-code-section {
+            font-weight: bold;   
+            padding: 20px;
+            max-width: auto;
+            margin: 20px 0;
+            text-align: center;
+            background-color: transparent; /* Transparent background */
+             }
+
+            #controls {
+                margin-top: 20px;
+            }
+
+            button {
+                padding: 10px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            /* The background color of the canvas (drawing area) only */
+            #alienCanvas {
+                background-color: rgb(122, 189, 234);; /* Light gray background for the drawing area */
+            }
+
+            /* Optional: Add a border around the canvas */
+            #alienCanvas {
+                border: 10px solid #000;
+            }
+        </style>
+    </head>
+
+    <body><!--File Written by Yeva Hakobyan-->
+        <header class="header">
+            <!-- Logo -->
+            <a href="../Index.html"><img src="../image/FairyTopia.png" id="Logo"></a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776; <!-- Unicode character for the hamburger icon -->
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li class="dropdown-button">
+                        <a href="BingoRing.html" class="navbar__links">Crime</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="BingoRing.html">Illegal Bingo Ring</a></li>
+                            <li><a href="VacuumSmuggler.html">The Vacuum Smuggler</a></li>
+                            <li><a href="GoldfishHacker.html">The Goldfish Hacker</a></li>
+                            <li><a href="PigeonHeist.html">A Pigeon Heist</a></li>
+                            <li><a href="CheeseSmuggling.html">Cheese Smuggling!</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="FakingBreakup.html" class="navbar__links">Showbizz</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="FakingBreakup.html">Faking Breakup</a></li>
+                            <li><a href="HauntedMansion.html">Haunted Mansion</a></li>
+                            <li><a href="LuxuryWedding.html">Luxury Wedding</a></li>
+                            <li><a href="SecretFeud.html">Secret Feud</a></li>
+                            <li><a href="SurprisePregnancy.html">Surprise Pregnancy</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="BasketballStar.html" class="navbar__links">Sports</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="BasketballStar.html">Basketball Star</a></li>
+                            <li><a href="DaveOrDazzle.html">Dave or Dazzle</a></li>
+                            <li><a href="KangarooBoxing.html">Kangaroo Boxing</a></li>
+                            <li><a href="ToTheMoon.html">To the Moon</a></li>
+                            <li><a href="ZeroGravityJenga.html">Zero Gravity Jenga</a></li>                       
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="MrPickles.html" class="navbar__links">History and Politics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="MrPickles.html">Mr Pickles</a></li>
+                            <li><a href="PalinandtheGreatCommunistPotato.html">Palin and the Great Communist Potato</a></li>
+                            <li><a href="TheGreatKangarooSmackdown.html">The Great Kangaroo Smackdown</a></li>
+                            <li><a href="TheRoyalMiscommunication.html">The Royal Miscommunication</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="AetheriaParallelEarth.html" class="navbar__links">Science And Space</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="AetheriaParallelEarth.html">"The <strong>NEW</strong> Earth"</a></li>
+                            <li><a href="CosmicMessage.html">"Cosmic Message?"</a></li>
+                            <li><a href="InterdimensionalRiftPortal.html">"Portal to Parallel Universes"</a></li>
+                            <li><a href="StarlightHarvest.html">"The Starlight Harvest"</a></li>
+                            <li><a href="TheFirstArtificialStar.html">"The first Artificial Star"</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Students/AboutUs.html" class="navbar__links">About Us</a></li>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button type="button">Go</button>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <div class="content-container">
+            <h1 class = "clearfix">
+                "Cosmic Message Found in Asteroid Dust: Signs of an Ancient Alien Civilization?"
+            </h1>
+            <article>
+                <h3>In Syunik, Armenia 2078</h3><!--Date and Place-->
+                <p>
+                    In a discovery that has sent shockwaves through the scientific community, a recent asteroid sample brought back to Earth has revealed tiny, encoded patterns embedded within the dust. These microstructures are unlike anything seen before, with intricate designs that suggest a deliberate and intelligent origin. Scientists are now debating whether these patterns could be an ancient message from an alien civilization that once existed billions of years ago. The asteroid, which was part of a recent deep-space mission, may have been carrying these enigmatic markings across the universe long before Earth even formed.
+                </p>
+                <p>
+                    The patterns found within the dust appear to be more than just random cosmic particles; they seem to form a sophisticated code that experts believe could be part of an interstellar communication network. The idea that such a message could have traveled across vast distances to reach Earth raises profound questions: could intelligent life have existed elsewhere in the universe, only to disappear long before we even had the technology to detect it? Some theorists suggest that this discovery could represent a hidden piece of galactic history, one that ties together the mysteries of space and time in ways humanity has yet to comprehend.
+                </p>
+                <p>
+                    While many experts are cautious, warning that the markings could be natural formations or a coincidence, the implications of such a find are staggering. If these patterns are indeed the remnants of an ancient alien message, it could rewrite our understanding of life in the universe. The question now is whether humanity is on the verge of deciphering the first true intergalactic communication, or if this discovery will remain an unsolved cosmic riddle, pushing the boundaries of human curiosity even further into the unknown.
+                </p>
+            </article>
+            
+            <div class="image-container">
+            <img src = "../image/asteroid dust.jpg" width = "500" class = "article-images">
+            <img src = "../image/asteroid dust2.jpg" width = "285" class = "article-images">
+            </div>
+            
+            <!--inspired by one of the Khan Academy classes -->
+            <div class="alien-code-section">
+                <h2>Create Your Alien Code</h2>
+                <p>Draw your special <strong>ALIEN CODE</strong>, let's see where your imagination can take you! </p>
+                <!-- Drawing Area -->
+                <canvas id="alienCanvas" width="600" height="400"></canvas>
+                <div id="controls">
+                    <button id="clearCanvas">Clear Canvas</button>
+                </div>
+            </div>
+
+
+            <!-- Like and Dislike Buttons (Zoey) -->
+            <section class="reaction-buttons">
+                <button class="like-btn">👍 Like</button>
+                <span class="like-count">0</span>
+                <button class="dislike-btn">👎 Dislike</button>
+                <span class="dislike-count">0</span>
+            </section>
+            <!-- Comments Section (Alberita)-->
+            <div class="reader-comments">
+                <h1>Write Us Your Comment </h1>
+                <textarea id="newComment" placeholder="Type your comment here"></textarea>
+                <button id="addComment">Add Comment</button>
+                <div id="commentSection">
+                    <h3>Comment Section</h3>
+                </div>
+            </div>
+
+            <table><!--Table With Reporter's Comments-->
+                <thead>
+                    <tr>
+                        <th>REPORTER</th>
+                        <th>COMMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elena Martinez</td>
+                        <td><em>"The possibility of an ancient alien message hidden in asteroid dust is mind-blowing! This could redefine our place in the universe."</em></td>
+                    </tr>
+                    <tr>
+                        <td>James Patel</td>
+                        <td><em>"We need to ensure rigorous analysis before jumping to conclusions—mistaking natural phenomena for alien communication could set science back."</em></td>
+                    </tr>
+                    <tr>
+                        <td>Aisha Ren</td>
+                        <td><em>"This discovery raises deeper questions: Are we alone, or are we simply the latecomers to a cosmic conversation?"</em></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </main>
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h4>About FairyTopian News</h4>
+                        <p>FairyTopian News brings you fascinating and out-of-this-world stories, keeping you informed and inspired every day. Explore the mysteries of the universe with us!</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="../Index.html">Home</a></li>
+                            <li><a href="../Html/AetheriaParallelEarth.html">Science and Space</a></li>
+                            <li><a href="../Html/BingoRing.html">Crime</a></li>
+                            <li><a href="../Students/AboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <ul class="social-links">
+                            <li><a href="https://www.instagram.com/citycollegethess/"><img src="../image/Instagram.png" alt="Instagram" class = "logo-image"></a></li>
+                            <li><a href="https://github.com/andoj3/I2WT-Website-Group6/tree/main/ScienceSpace"><img src="../image/GitHub.png" alt="GitHub" class = "logo-image"></a></li> 
+                        </ul>
+                    </div>
+                    <div class="footer-section subscribe">
+                        <h4>Subscribe to Our Newsletter</h4>
+                        <p>Get fresh <strong>FairyTopian</strong> news every week!</p>
+                        <form action="#" method="POST">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 FairyTopian News. All rights reserved.</p>
+                </div>
+            </footer>   
+            
+    <script>
+         //JS for making the subscription box interactive
+    document.addEventListener('DOMContentLoaded', function() {
+    //selects the CSS selector ".footer-section-subscribe"
+    const subscribeBox = document.querySelector('.footer-section.subscribe');
+    
+    //mouseenter event is triggered when hovering over the box
+    subscribeBox.addEventListener('mouseenter', function() {
+        //css class hovered
+    subscribeBox.classList.add('hovered'); 
+    });
+
+    //mouseleave event is triggered, when the mouse is no longer on the subscription box
+    subscribeBox.addEventListener('mouseleave', function() {
+    subscribeBox.classList.remove('hovered');
+    });
+});
+
+    
+//Comment Section 
+document.getElementById('addComment').addEventListener('click', function () {
+    //acquire the text value
+    const commentText = document.getElementById('newComment').value;
+
+    if (commentText.trim() !== "") { 
+        // div for comment
+        const commentDiv = document.createElement('div');
+        commentDiv.textContent = commentText;
+
+        // comment style to the text
+        commentDiv.classList.add('comment');
+
+        // Append comments to comment section
+        document.getElementById('commentSection').appendChild(commentDiv);
+
+        // New value of text after press
+        document.getElementById('newComment').value = "";
+    }
+
+});
+
+//like-dislike button js
+document.addEventListener('DOMContentLoaded', () => {
+    const likeButtons = document.querySelectorAll('.like-btn');
+    const dislikeButtons = document.querySelectorAll('.dislike-btn');
+    const likeCounts = document.querySelectorAll('.like-count');
+    const dislikeCounts = document.querySelectorAll('.dislike-count');
+
+    // Set random counts on page load
+    dislikeCounts.forEach(count => {
+        const dislikeCount = Math.floor(Math.random() * 100);
+        count.textContent = dislikeCount;
+    });
+
+    likeCounts.forEach((count, index) => {
+        const dislikeCount = parseInt(dislikeCounts[index].textContent);
+        const likeCount = Math.floor(Math.random() * 100) + dislikeCount;
+        count.textContent = likeCount;
+    });
+
+    likeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const likeCount = likeCounts[index];
+            const dislikeButton = dislikeButtons[index];
+            const dislikeCount = dislikeCounts[index];
+
+            if (btn.classList.contains('reaction-active')) {
+                likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                btn.classList.remove('reaction-active');
+            } else {
+                likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                btn.classList.add('reaction-active');
+                if (dislikeButton.classList.contains('reaction-active')) {
+                    dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                    dislikeButton.classList.remove('reaction-active');
+                }
+            }
+        });
+    });
+
+    dislikeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const dislikeCount = dislikeCounts[index];
+            const likeButton = likeButtons[index];
+            const likeCount = likeCounts[index];
+
+            if (btn.classList.contains('reaction-active')) {
+                dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                btn.classList.remove('reaction-active');
+            } else {
+                dislikeCount.textContent = parseInt(dislikeCount.textContent) + 1;
+                btn.classList.add('reaction-active');
+                if (likeButton.classList.contains('reaction-active')) {
+                    likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                    likeButton.classList.remove('reaction-active');
+                }
+            }
+        });
+    });
+});
+
+    
+//humburger functionality
+//selecting the hamburger elemenent with the CSS selector
+const hamburger = document.querySelector('.hamburger');
+//selecting the navbar elemenent with the CSS selector
+const navbar = document.querySelector('.navbar');
+
+//adding a click event listener to the hamburger variable
+hamburger.addEventListener('click', () => {
+navbar.classList.toggle('open');
+});
+
+
+//game (insprited by youTube videos/Khan academy)
+
+document.addEventListener('DOMContentLoaded', function () {
+    //getting the canvas element
+    const canvas = document.getElementById('alienCanvas');
+    //getting the 2d drawing context for the canvas
+    const ctx = canvas.getContext('2d');
+    //getting the button element for clearting the canvas
+    const clearCanvasButton = document.getElementById('clearCanvas');
+    //initializing the drawing variable as false to track if the drawing is acteve
+    let drawing = false;
+
+// Function to start drawing
+    canvas.addEventListener('mousedown', function (e) {
+        drawing = true;
+        ctx.moveTo(e.offsetX, e.offsetY);
+    });
+
+    // Function to draw on mouse move
+    canvas.addEventListener('mousemove', function (e) {
+        if (drawing) {
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.stroke();
+        }
+    });
+
+    // Stop drawing when mouse is released
+    canvas.addEventListener('mouseup', function () {
+        drawing = false;
+    });
+
+    // Clear canvas
+    clearCanvasButton.addEventListener('click', function () {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+});
+            </script>
+
+    </body>
+</html>

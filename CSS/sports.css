@@ -1,0 +1,1104 @@
+/*File Written By Alberita Ndoj*/
+
+body {
+  background-color: rgb(200, 190, 210);
+  color: black;
+  font-family: sans-serif;
+  font-size: 110%;
+  background-image: hreg;
+}
+
+img:not(.header img):not(.footer img):not(.navbar img):not(.logo-image) {
+    border: 4px groove rgb(31, 144, 205);
+}
+
+.header img,
+.footer img,
+.navbar img,
+.logo-image {
+    border: none;
+}
+
+table {
+  border: 4px dashed rgb(97, 156, 156);
+}
+
+thead {
+  background-color: rgb(128, 125, 212);
+}
+
+tbody{
+  background-color: rgb(234, 227, 218);
+}
+/*Dark Mode Styling*/
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: rgb(28, 24, 39) !important;
+    color: rgba(226, 220, 220) !important;
+}
+
+/* Elements that should change in dark mode */
+.dark-mode div:not(.header):not(.navbar):not(.footer):not(.footer-container):not(.footer-section):not(.dropdown-menu),
+.dark-mode section,
+.dark-mode p:not(.footer-section p),
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3:not(.footer-section h3) {
+    background-color: rgb(40, 35, 54);
+    color: rgba(226, 220, 220);
+}
+
+/* Keep original styles for nav and footer */
+.header,
+.navbar,
+.footer,
+.navbar__links,
+.dropdown-menu,
+.footer-container,
+.footer-section,
+.footer-section p,
+.footer-section h4 {
+    background-color: inherit;
+    color: inherit;
+}
+
+/* Specific footer style that should always remain */
+.footer {
+    background-color: rgb(6, 6, 95) !important;
+}
+
+.footer-section p {
+    color: white !important;
+}
+
+/* Image borders in dark mode */
+.dark-mode img:not(.header img):not(.footer img) {
+    border: 6px groove rgb(76, 26, 146);
+}
+
+.dark-mode .header img,
+.dark-mode .footer img {
+    border: none;
+}
+
+/* Table styles in dark mode */
+.dark-mode table {
+    background-color: rgb(28, 24, 39);
+    color: rgba(226, 220, 220);
+    border: 4px dashed rgb(117, 117, 163);
+}
+
+.dark-mode thead {
+    background-color: rgb(107, 64, 165);
+    color: rgb(250, 248, 248);
+}
+
+.dark-mode tbody {
+    background-color: rgb(96, 88, 106);
+}
+
+/* Image container for side-by-side images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image-container img {
+    width: 180px;
+}
+
+/* Content wrapper for reaction buttons */
+.content-wrapper {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Reaction buttons styling */
+.reaction-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.like-btn, .dislike-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.like-count, .dislike-count {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/*Response design*/
+
+/*Above 768px*/
+@media only screen and (min-width:768px) and (max-width:768px) {
+  .col-l-1 {
+    width: 8.33%;
+  }
+
+  .col-l-2 {
+    width: 16.66%;
+  }
+
+  .col-l-3 {
+    width: 25%;
+  }
+
+  .col-l-4 {
+    width: 33.33%;
+  }
+
+  .col-l-5 {
+    width: 41.66%;
+  }
+
+  .col-l-6 {
+    width: 50%;
+  }
+
+  .col-l-7 {
+    width: 58.33%;
+  }
+
+  .col-l-8 {
+    width: 66.66%;
+  }
+
+  .col-l-9 {
+    width: 75%;
+  }
+
+  .col-l-10 {
+    width: 83.33%;
+  }
+
+  .col-l-11 {
+    width: 91.66%;
+  }
+
+  .col-l-12 {
+    width: 100%;
+  }
+}
+
+/*more than 600px*/
+@media only screen and (min-width:600px) {
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/*Less than 600px*/
+@media only screen and (max-width:600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%;
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+
+/* Content wrapper for reaction buttons */
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Reaction buttons styling */
+.reaction-buttons {
+    text-align: center;
+    padding: 10px;
+}
+
+.like-btn, .dislike-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.like-count, .dislike-count {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Carousel specific styles */
+.carousel-container {
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.row::after {
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+}
+#Logo {
+  max-width: 150px;
+  height: auto;
+  padding-left: 30px;
+  
+  
+  
+}
+
+
+/* Navigation Bar Done By Yeva Hakobyan*/
+.dropdown-menu {
+display:none;
+  position: absolute;
+  background-color: navy;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  z-index: 200;
+}
+
+.dropdown-button:hover .dropdown-menu, .dropdown-menu:hover {
+  display: block;
+}
+
+.dropdown-button:hover > a,
+.dropdown-menu li:hover > li > a {
+  background-color: bisque;
+  color: navy;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px 10px;
+  border-radius:5px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(239, 212, 146);
+  color: navy;
+}
+
+.dropdown-button {
+  position: relative;
+}
+
+nav > ul > li:hover {
+background-color: bisque;
+color:white;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.navbar__links {
+  text-decoration: none; 
+  color: white; 
+  font-weight: bold;
+  padding: 5px 10px; 
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.navbar__links:hover {
+  background: rgb(239, 212, 146);
+  color: navy;
+}
+
+.header {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:navy;
+  z-index: 100;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+
+}
+
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; /*Allow items to wrap */
+  z-index: 100;
+  background: navy;
+  padding: 10px 20px;
+  gap: 20px; 
+
+}
+
+.navbar li {
+  white-space: nowrap; /* prevents text wrapping */
+}
+
+.navbar > ul {
+  display: flex; 
+  justify-content: space-evenly; 
+  align-items: center;
+  list-style-type: none;
+  width: 100%;  
+  padding-right: 400px; 
+  margin: 0; 
+  list-style-type: none; 
+  gap: 50px; 
+
+}
+
+/* Search Bar */
+.search-bar {
+  margin-left: auto; 
+  display: flex; 
+  align-items: center;
+  gap: 5px; 
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: rgb(239, 212, 146);
+  border: none;
+  color: navy;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: white;
+  color: rgb(208, 164, 53);
+}
+
+/* Mobile response behavior */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /*Stack navbar vertically*/
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .navbar ul {
+      flex-direction: column; /*sack the menu items */
+      gap: 10px;
+      width: 100%;
+  }
+
+  .navbar li {
+      width: 100%; /* make each link take the full width */
+  }
+
+  .search-bar {
+      margin-left: 0; /* Align search bar to the left */
+      width: 100%;
+  }
+}
+/*Navivigation BAr Doen By Yeva Hakobyan*/
+
+/*Comment Section*/
+/*Container of comment section*/
+.container {
+  width: 50%;
+  margin: auto;
+  /*centers horizontally */
+  font-family: Arial, sans-serif;
+  background-color: rgb(249, 249, 249);
+  border-radius: 10px;
+  padding: 20px;
+  /* inner spacing */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /*subtle shadow*/
+}
+
+/* Styles for the text area where users write comments */
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 12px;
+  padding: 8px;
+  /* inner spacing of the text input */
+  border: 1px solid rgb(138, 137, 160);
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+}
+
+/*Style for the Add Comment button And Dark Mode And Go To Top buttons*/
+button {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  padding: 10px 16px;
+  color: white;
+  background-color: rgb(90, 45, 128);
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  /* animation of button pressed */
+}
+
+button:hover {
+  background-color: rgb(62, 32, 92);
+}
+
+button:active {
+  transform: scale(0.5);
+  /*shrink the button on click*/
+}
+
+/*Display of the comments*/
+#commentSection {
+  border-top: 1px solid #a6bfcd;
+  padding-top: 10px;
+  /*Space above the first comment*/
+
+}
+
+/*Individual comments*/
+.comment {
+  display: block;
+  margin: 7px;
+  padding: 7px;
+  border: none;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  color: rgb(23, 23, 23);
+}
+
+/*Image Animation Of Article*/
+.image-container img {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.image-container img:hover {
+  transform: scale(1.3);
+  z-index: 1000;
+}
+
+.rotate {
+  animation: rotate 0.3s ease;
+}
+
+/*Images Of You Might Find Interesting*/
+.image-container2 {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container2 a {
+    width: 260px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.image-container2 img {
+    width: 260px !important;
+    height: 169px !important;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #6b40a5;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .image-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container2 a {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+.rotate {
+    transform: rotate(7deg);
+    transition: 0.3s;
+}
+
+/* Center all page titles */
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+/* For secondary titles */
+h2 {
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+/*Styling Of Carousel*/
+
+.carousel-container {
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure buttons appear above slides */
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Make buttons circular */
+}
+
+.prev {
+    left: 10px; /* Add spacing from left edge */
+}
+
+.next {
+    right: 10px; /* Add spacing from right edge */
+}
+
+.prev:hover, .next:hover {
+    background: rgb(146, 146, 152);
+}
+
+.reaction-buttons {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.like-btn, .dislike-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.like-count, .dislike-count {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Reaction buttons styling */
+.reaction-buttons {
+  display: block;
+  text-align: center;
+  width: 40%;
+  margin: 20px auto;
+}
+
+.like-btn, .dislike-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.like-count, .dislike-count {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Title container and button styling */
+.title-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    padding: 0 20px;
+    min-height: 50px;
+}
+
+.title-container h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    width: auto;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.title-container h1:hover {
+    color: #6b46c1;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+.dark-mode .title-container h1:hover {
+    color: #9f7aea;
+}
+
+#themeButton {
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    padding: 8px 20px;
+    background-color: #6b46c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    white-space: nowrap;
+    transition: none;
+}
+
+#themeButton:hover {
+    background-color: #553c9a;
+    transition: background-color 0.2s ease;
+}
+
+/*Footer Done By Yeva Hakobyan*/
+footer {
+  background-color: rgb(6, 6, 95);
+  color: white;
+  padding: 9px 25px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content:space-between; 
+  gap: 20px; 
+}
+
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px 0;
+  
+}
+
+.footer-section:nth-child(2) {
+  margin-left: 100px; 
+}
+
+
+.footer-section h4 {
+  color: rgb(229, 168, 15);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.social-links{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 10px; 
+}
+
+.social-links li {
+  margin: 0;
+}
+
+.footer-section .social-links {
+  margin-top: 20px; 
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a, .social-links a {
+  color: rgb(239, 212, 146);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links a:hover, .social-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-section input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.footer-section button {
+  padding: 10px;
+  background-color: rgb(239, 212, 146);
+  border: none;
+  color: navy;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-section button:hover {
+  background-color: white;
+  color: rgb(208, 164, 53);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.social-links::after{
+  content: ""; 
+  display: block;
+  clear: both;
+}
+
+.footer-section.subscribe {
+  background-color: #cce0ff; 
+  color: navy; 
+  padding: 25px; 
+  border-radius: 20px; 
+  box-shadow: 0 15px 20px rgb(208, 164, 53); 
+  margin: 10px 0; 
+  transition: all 0.3s ease; 
+}
+
+.footer-section.subscribe.hovered {
+  background-color: #e0e0e0; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.footer-section form input,
+.footer-section form button {
+  width: 100%; 
+  box-sizing: border-box; 
+}
+/*Footer Done By Yeva Hakobyan*/
+#themeButton {
+  position: relative;
+  z-index: 1000;
+}
+
+
+/*Likes and Dislikes Done By Zoe Tsoulfidou*/
+
+.reaction-buttons {
+  width: 40%;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+.like-btn, .dislike-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dislike-btn {
+  background-color: #f44336;
+}
+
+.like-btn:hover, .dislike-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.like-count, .dislike-count {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+@keyframes reactionAnimation {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.reaction-active {
+  animation: reactionAnimation 0.3s ease-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.like-btn.reaction-active {
+  background-color: #266329;
+}
+
+.dislike-btn.reaction-active {
+  background-color: #611313;
+}
+
+/*Likes and Dislikes Done By Zoe Tsoulfidou*/
+
+/* Header Style from BasketballStar */
+h1,
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: #1b1919;
+    transition: all 0.3s ease;
+}
+
+/* Glow on hover */
+h1:hover {
+    color: #6b46c1;
+    text-shadow: 0 0 10px #839570,
+        0 0 20px #482a8e;
+    transform: scale(1.2);
+}
+
+/* News card styles */
+.news-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgb(211, 200, 222);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Box container style for all pages */
+.box-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(205, 218, 220, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img,
+.image-container2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Dark mode additions */
+.dark-mode .news-card,
+.dark-mode .box-container {
+    background-color: rgb(40, 35, 54);
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+}

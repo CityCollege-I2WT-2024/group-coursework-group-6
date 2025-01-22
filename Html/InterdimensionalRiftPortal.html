@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FairyTopian News</title>
+        <link rel="icon" href="../image/favicon.ico" type="image/x-icon"> <!--Implemented by Zoey-->
+        <link rel="stylesheet" href="../CSS/Space.css">
+        <meta name="description" content="FairyTopian News - Discover parallel universes and cutting-edge scientific discoveries.">
+        <meta name="author" content="Yeva Hakobyan">
+        <style>
+/*css for the timeline*/
+/* Heading */
+.timeline-heading {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Individual Event Styling */
+.timeline-event {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.event-year {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+/* Timeline Line */
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: navy;
+}
+
+/* Event Details Styling */
+.event-details {
+    max-width: 700px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px navy;
+}
+
+/* Hover Effect for Events */
+.timeline-event:hover .event-year {
+    background-color: rgb(239, 212, 146);
+    color: navy;
+}
+
+.timeline-event:hover .event-details {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+        </style>
+    </head>
+
+    <body><!--File Written by Yeva Hakobyan-->
+        <header class="header">
+            <!-- Logo -->
+            <a href="../Index.html"><img src="../image/FairyTopia.png" id="Logo"></a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776; <!-- Unicode character for the hamburger icon -->
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li class="dropdown-button">
+                        <a href="BingoRing.html" class="navbar__links">Crime</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="BingoRing.html">Illegal Bingo Ring</a></li>
+                            <li><a href="VacuumSmuggler.html">The Vacuum Smuggler</a></li>
+                            <li><a href="GoldfishHacker.html">The Goldfish Hacker</a></li>
+                            <li><a href="PigeonHeist.html">A Pigeon Heist</a></li>
+                            <li><a href="CheeseSmuggling.html">Cheese Smuggling!</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="FakingBreakup.html" class="navbar__links">Showbizz</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="FakingBreakup.html">Faking Breakup</a></li>
+                            <li><a href="HauntedMansion.html">Haunted Mansion</a></li>
+                            <li><a href="LuxuryWedding.html">Luxury Wedding</a></li>
+                            <li><a href="SecretFeud.html">Secret Feud</a></li>
+                            <li><a href="SurprisePregnancy.html">Surprise Pregnancy</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="BasketballStar.html" class="navbar__links">Sports</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="BasketballStar.html">Basketball Star</a></li>
+                            <li><a href="DaveOrDazzle.html">Dave or Dazzle</a></li>
+                            <li><a href="KangarooBoxing.html">Kangaroo Boxing</a></li>
+                            <li><a href="ToTheMoon.html">To the Moon</a></li>
+                            <li><a href="ZeroGravityJenga.html">Zero Gravity Jenga</a></li>                       
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="MrPickles.html" class="navbar__links">History and Politics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="MrPickles.html">Mr Pickles</a></li>
+                            <li><a href="PalinandtheGreatCommunistPotato.html">Palin and the Great Communist Potato</a></li>
+                            <li><a href="TheGreatKangarooSmackdown.html">The Great Kangaroo Smackdown</a></li>
+                            <li><a href="TheRoyalMiscommunication.html">The Royal Miscommunication</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="AetheriaParallelEarth.html" class="navbar__links">Science And Space</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="AetheriaParallelEarth.html">"The <strong>NEW</strong> Earth"</a></li>
+                            <li><a href="CosmicMessage.html">"Cosmic Message?"</a></li>
+                            <li><a href="InterdimensionalRiftPortal.html">"Portal to Parallel Universes"</a></li>
+                            <li><a href="StarlightHarvest.html">"The Starlight Harvest"</a></li>
+                            <li><a href="TheFirstArtificialStar.html">"The first Artificial Star"</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Students/AboutUs.html" class="navbar__links">About Us</a></li>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button type="button">Go</button>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+        <div class="content-container">
+            <h1 class = "clearfix">
+                "The Interdimensional Rift: Scientists Detect Portal to Parallel Universes!"
+            </h1>
+            <article>
+                <h3>In Gyumri, Armenia 2120</h3><!--Date and Place-->
+                <p>
+                    In a breakthrough that could change everything we know about reality, scientists have detected a mysterious rift in the fabric of space-time, which they believe could be a portal to parallel universes. Using cutting-edge quantum sensors, a team of researchers at the Nexus Space Observatory discovered an anomaly in the cosmos, where the laws of physics appear to be "thinner" than anywhere else. These rifts, or "quantum breaches," could serve as windows into other dimensions, where alternate versions of Earth—and even different laws of nature—might exist.
+                </p>
+                <p>
+                    Early studies suggest that these portals might not be stable, but the possibility of accessing parallel realities has sparked immense excitement among physicists. Could humanity soon be able to travel across dimensions, encountering alternate versions of Earth or even alternate versions of ourselves? With each breakthrough, researchers are learning more about how these rifts work, but many questions remain: Can we control them? Are the other dimensions habitable? And most intriguingly, could we ever meet our parallel selves?
+                </p>
+                <p>
+                    Governments and space agencies are already racing to explore these rifts further, but there are growing concerns about the dangers of meddling with other dimensions. Could interactions with alternate realities have catastrophic effects on our own world? Only time will tell whether this new door to the multiverse will lead to an age of interdimensional discovery or open up a Pandora’s box of unknown consequences.
+                </p>
+            </article>
+            
+            <div class="image-container">
+                <img src = "../image/massive rift.jpg" width = "285" class = "article-images">
+                <img src = "../image/rift2.jpg" width = "285" class = "article-images">
+            </div>
+            
+
+            <main>
+                <h1 class="timeline-heading">Explore the Parallel Universe Timeline</h1>
+                
+                <div class="timeline">
+                    <div class="timeline-event" id="event-1">
+                        <div class="event-year">1955</div>
+                        <div class="event-details">
+                            <h3>Moon Landing</h3>
+                            <p>In our universe, humans land on the moon for the first time. In a parallel universe, the moon landing happens in 1955!</p>
+                        </div>
+                    </div>
+            
+                    <div class="timeline-event" id="event-2">
+                        <div class="event-year">2020</div>
+                        <div class="event-details">
+                            <h3>Global Pandemic</h3>
+                            <p>In our universe, the world faces a global pandemic. In a parallel universe, Earth unites for a global space expedition.</p>
+                        </div>
+                    </div>
+            
+                    <div class="timeline-event" id="event-3">
+                        <div class="event-year">2500</div>
+                        <div class="event-details">
+                            <h3>Earth Colonization of Mars</h3>
+                            <p>In our universe, humans colonize Mars in 2500. In a parallel universe, Mars becomes the primary hub of human civilization much earlier.</p>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </main>
+            
+
+            <!-- Like and Dislike Buttons -->
+            <section class="reaction-buttons">
+                <button class="like-btn">👍 Like</button>
+                <span class="like-count">0</span>
+                <button class="dislike-btn">👎 Dislike</button>
+                <span class="dislike-count">0</span>
+            </section>
+            <!-- Comments Section -->
+            <div class="reader-comments">
+                <h1>Write Us Your Comment </h1>
+                <textarea id="newComment" placeholder="Type your comment here"></textarea>
+                <button id="addComment">Add Comment</button>
+                <div id="commentSection">
+                    <h3>Comment Section</h3>
+                </div>
+            </div>
+
+            <table><!--Table With Reporter's Comments-->
+                <thead>
+                    <tr>
+                        <th>REPORTER</th>
+                        <th>COMMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Amara Evans</td>
+                        <td><em>"The possibility of meeting parallel versions of ourselves is both thrilling and terrifying—imagine how that could change our understanding of identity."</em></td>
+                    </tr>
+                    <tr>
+                        <td>Liam Rodriguez</td>
+                        <td><em>"This discovery challenges everything we thought we knew about physics. A multiverse could explain so many cosmic mysteries."</em></td>
+                    </tr>
+                    <tr>
+                        <td>Sophia Chang</td>
+                        <td><em>"The race to study these rifts feels like the new space race, but the stakes are far higher. Are we ready for the consequences?"</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>About FairyTopian News</h4>
+                    <p>FairyTopian News brings you fascinating and out-of-this-world stories, keeping you informed and inspired every day. Explore the mysteries of the universe with us!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../Index.html">Home</a></li>
+                        <li><a href="../Html/AetheriaParallelEarth.html">Science and Space</a></li>
+                        <li><a href="../Html/BingoRing.html">Crime</a></li>
+                        <li><a href="../Students/AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.instagram.com/citycollegethess/"><img src="../image/Instagram.png" alt="Instagram" class = "logo-image"></a></li>
+                        <li><a href="https://github.com/andoj3/I2WT-Website-Group6/tree/main/ScienceSpace"><img src="../image/GitHub.png" alt="GitHub" class = "logo-image"></a></li> 
+                    </ul>
+                </div>
+                <div class="footer-section subscribe">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Get fresh <strong>FairyTopian</strong> news every week!</p>
+                    <form action="#" method="POST">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FairyTopian News. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+
+    <script>
+              //JS for making the subscription box interactive
+    document.addEventListener('DOMContentLoaded', function() {
+    //selects the CSS selector ".footer-section-subscribe"
+    const subscribeBox = document.querySelector('.footer-section.subscribe');
+    
+    //mouseenter event is triggered when hovering over the box
+    subscribeBox.addEventListener('mouseenter', function() {
+        //css class hovered
+    subscribeBox.classList.add('hovered'); 
+    });
+
+    //mouseleave event is triggered, when the mouse is no longer on the subscription box
+    subscribeBox.addEventListener('mouseleave', function() {
+    subscribeBox.classList.remove('hovered');
+    });
+});
+
+    //Comment Section 
+    document.getElementById('addComment').addEventListener('click', function () {
+    //acquire the text value
+    const commentText = document.getElementById('newComment').value;
+
+    if (commentText.trim() !== "") { 
+        // div for comment
+        const commentDiv = document.createElement('div');
+        commentDiv.textContent = commentText;
+
+        // comment style to the text
+        commentDiv.classList.add('comment');
+
+        // Append comments to comment section
+        document.getElementById('commentSection').appendChild(commentDiv);
+
+        // New value of text after press
+        document.getElementById('newComment').value = "";
+    }
+
+
+});
+
+//like-dislike js
+document.addEventListener('DOMContentLoaded', () => {
+    const likeButtons = document.querySelectorAll('.like-btn');
+    const dislikeButtons = document.querySelectorAll('.dislike-btn');
+    const likeCounts = document.querySelectorAll('.like-count');
+    const dislikeCounts = document.querySelectorAll('.dislike-count');
+
+    // Set random counts on page load
+    dislikeCounts.forEach(count => {
+        const dislikeCount = Math.floor(Math.random() * 100);
+        count.textContent = dislikeCount;
+    });
+
+    likeCounts.forEach((count, index) => {
+        const dislikeCount = parseInt(dislikeCounts[index].textContent);
+        const likeCount = Math.floor(Math.random() * 100) + dislikeCount;
+        count.textContent = likeCount;
+    });
+
+    likeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const likeCount = likeCounts[index];
+            const dislikeButton = dislikeButtons[index];
+            const dislikeCount = dislikeCounts[index];
+
+            if (btn.classList.contains('reaction-active')) {
+                likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                btn.classList.remove('reaction-active');
+            } else {
+                likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                btn.classList.add('reaction-active');
+                if (dislikeButton.classList.contains('reaction-active')) {
+                    dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                    dislikeButton.classList.remove('reaction-active');
+                }
+            }
+        });
+    });
+
+    dislikeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const dislikeCount = dislikeCounts[index];
+            const likeButton = likeButtons[index];
+            const likeCount = likeCounts[index];
+
+            if (btn.classList.contains('reaction-active')) {
+                dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                btn.classList.remove('reaction-active');
+            } else {
+                dislikeCount.textContent = parseInt(dislikeCount.textContent) + 1;
+                btn.classList.add('reaction-active');
+                if (likeButton.classList.contains('reaction-active')) {
+                    likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                    likeButton.classList.remove('reaction-active');
+                }
+            }
+        });
+    });
+});
+
+
+ //humburger functionality
+//selecting the hamburger elemenent with the CSS selector
+const hamburger = document.querySelector('.hamburger');
+//selecting the navbar elemenent with the CSS selector
+const navbar = document.querySelector('.navbar');
+
+//adding a click event listener to the hamburger variable
+hamburger.addEventListener('click', () => {
+navbar.classList.toggle('open');
+});
+
+
+
+//timeline JS
+document.addEventListener('DOMContentLoaded', () => {
+    const events = document.querySelectorAll('.timeline-event');
+
+    // Add event listeners for hover on events
+    events.forEach(event => {
+        event.addEventListener('mouseenter', () => {
+            // Highlight the event and show extra details
+            event.querySelector('.event-details').style.backgroundColor = '#f9f9f9';
+            event.querySelector('.event-year').style.backgroundColor = '#efd492';
+        });
+
+        event.addEventListener('mouseleave', () => {
+            // Remove highlights and revert back to original state
+            event.querySelector('.event-details').style.backgroundColor = '#fff';
+            event.querySelector('.event-year').style.backgroundColor = '#000080';
+        });
+    });
+});
+
+        </script>
+    </body>
+</html>

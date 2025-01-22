@@ -1,0 +1,711 @@
+#Logo {
+    max-width: 150px;
+    height: auto;
+    padding-left: 30px;
+}
+
+/* Navigation Bar */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: navy;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 200;
+}
+
+.dropdown-button:hover .dropdown-menu, .dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-button:hover > a,
+.dropdown-menu li:hover > li > a {
+    background-color: bisque;
+    color: navy;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgb(239, 212, 146);
+    color: navy;
+}
+
+.dropdown-button {
+    position: relative;
+}
+
+nav > ul > li:hover {
+    background-color: bisque;
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.navbar__links {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.navbar__links:hover {
+    background: rgb(239, 212, 146);
+    color: navy;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: navy;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+    z-index: 100;
+    background: navy;
+    padding: 10px 20px;
+    gap: 20px;
+    max-height: none; /* Ensure the navbar items are not cut off */
+    overflow: visible; /* Ensure the navbar items are visible */
+    transition: max-height 0.3s ease-out;
+}
+
+.navbar.open {
+    max-height: 500px; /* Adjust based on your content */
+}
+
+.navbar li {
+    white-space: nowrap; /* prevents text wrapping */
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    padding-right: 400px;
+    margin: 0;
+    list-style-type: none;
+    gap: 50px;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: rgb(239, 212, 146);
+    border: none;
+    color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: white;
+    color: rgb(208, 164, 53);
+}
+
+
+
+/* Mobile response behavior */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar vertically */
+        align-items: flex-start;
+        padding: 10px;
+        max-height: 0; /* Hide the navbar items initially */
+        overflow: hidden; /* Hide the overflow */
+        
+    } 
+
+
+    .navbar.open {
+        max-height: 500px; /* Adjust based on your content */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack the menu items */
+        gap: 10px;
+        width: 100%;
+        margin: revert-layer;
+    }
+
+    .navbar li {
+        width: 100%; /* Make each link take the full width */
+    }
+
+    .search-bar {
+        margin-left: 0; /* Align search bar to the left */
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block; /* Make hamburger visible on smaller screens */
+    }
+    #Logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 101;
+    }
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none; /* Hide hamburger icon on large screens */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 110; /* Ensure it's above the navbar */
+    margin-left: auto; /* Push it to the far right of the header */
+}
+
+/* Body */
+body {
+    background-color: transparent;
+    font-family: sans-serif;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.news-card h1 {
+    color: #6a5acd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.news-card p {
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-style: book antiqua;
+    text-align: justify;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: #6a5acd;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-bottom: 3px solid #6a5acd;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.news-card {
+    /* background: linear-gradient(135deg, #ffffff, #f9f9ff); */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.new-card img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+.image-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/*Likes and Dislikes*/
+.reaction-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    transition: transform 0.3s ease , background-color 0.3s ease, color 0.3s ease;
+}
+
+.like-btn,
+.dislike-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dislike-btn {
+    background-color: #f44336;
+}
+
+@keyframes reactionAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.reaction-active {
+    animation: reactionAnimation 0.3s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.like-btn.reaction-active {
+    background-color: #266329;
+}
+
+.dislike-btn.reaction-active {
+    background-color: #611313;
+}
+
+#headingcom {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-bottom: 3px solid #ffffff;
+    width: fit-content;
+    margin: 30px auto;
+}
+.comment-section {
+    /* background: linear-gradient(135deg, #ffffff, #f9f9ff); */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+div > h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #6a5acd; 
+}
+
+ 
+  /* Styles for the text area where users write comments */
+  textarea {
+    width: 96% !important;
+    height: 80px;
+    margin-bottom: 12px;
+    padding: 15px;
+    /* inner spacing of the text input */
+    border: 1px solid rgb(138, 137, 160);
+    border-radius: 10px;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  /*Style for the Add Comment button And Dark Mode And Go To Top buttons*/
+  #comments button {
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    padding: 10px 16px;
+    color: white;
+    background-color: navy;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    /* animation of button pressed */
+  }
+  
+  #comments button:hover {
+    background-color: rgb(37, 37, 238);
+  }
+  
+  
+  /*Display of the comments*/
+  #commentSection {
+    border-top: 1px solid #a6bfcd;
+    padding-top: 10px;
+    /*Space above the first comment*/
+  
+  }
+  
+  /*Individual comments*/
+  .comment {
+    display: block;
+    margin: 7px;
+    padding: 7px;
+    border: none;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: rgb(23, 23, 23);
+  }
+
+#comments {
+    /* border: 2px solid #ccc; */
+    border-radius: 12px;
+}
+/* Reporters Comments */
+
+.RepCom {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+td{
+    transition: border 0.3s ease;
+}
+section hr {
+    border: none;
+    height: 2px;
+    background-color: navy;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+table thead th {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+
+table td {
+    padding: 10px;
+    font-size: 1em;
+    vertical-align: top;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    background-color: navy;
+    color: white;
+    padding: 20px 50px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure sections wrap if they don't fit in a single row */
+    justify-content:space-between; /* Distribute sections evenly */
+    gap: 20px; /* Add equal spacing between sections */
+}
+
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px 0;
+    
+}
+
+.footer-section:nth-child(2) {
+    margin-left: 100px; /* Move the "Quick Links" section to the right */
+}
+
+
+.footer-section h4 {
+    color: rgb(229, 168, 15);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.social-links{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* flexbox for horizontal alignment */
+    gap: 10px; /* spacing between icons */
+}
+
+.social-links li {
+    margin: 0;
+}
+
+.footer-section .social-links {
+    margin-top: 20px; /* Adds spacing between "Follow Us" and the icons */
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a, .social-links a {
+    color: rgb(239, 212, 146);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links a:hover, .social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer-section button {
+    padding: 10px;
+    background-color: rgb(239, 212, 146);
+    border: none;
+    color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section button:hover {
+    background-color: white;
+    color: rgb(208, 164, 53);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.social-links::after{
+    content: ""; 
+    display: block;
+    clear: both;
+}
+
+.footer-section.subscribe {
+    background-color: #cce0ff; /* Background color for the box */
+    color: navy; /* Text color for contrast */
+    padding: 25px; /* Space inside the box */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 15px 20px rgb(208, 164, 53); /* Optional shadow for a modern look */
+    margin: 10px 0; /* Space outside the box */
+    transition: all 0.3s ease; 
+}
+
+.footer-section.subscribe.hovered {
+    background-color: #e0e0e0; /* Darker background on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add a shadow for the "hovered" effect */
+}
+
+.footer-section form input,
+.footer-section form button {
+    width: 100%; /* Make both elements take up the full width of the form */
+    box-sizing: border-box; /* Ensure padding doesn't affect the total width */
+}
+
+.logo-image {
+    float:left;
+    margin-right:10px;
+    height:auto;
+    width:50px;
+}
+
+
+/*dark-mode button, CSS edited by Zoey Tsoulfidou so it works with my html*/
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+body.dark-mode .news-card  {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+body.dark-mode .news-card:hover  {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+body.dark-mode section{
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+body.dark-mode .title{
+    background-color: transparent !important;
+    color: #ffffff;
+}
+body.dark-mode .comment-section{
+    background-color: #1e1e1e;
+    color: #1e1e1e;
+}
+body.dark-mode td{
+    border:rgb(255, 255, 255) 1px solid;
+}
+.Popular:hover, .articles:hover, .articles2:hover {
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+.darkmodebutton {
+    position: fixed;
+    top: 150px;
+    right: 5px;
+    padding: 10px 15px;
+    background-color: #4f63ca;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 15px #7791f780;
+
+}
+
+.darkmodebutton:hover {
+    background-color: #5766c5;
+}
+
+/* Mobile response behavior */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Make hamburger visible on smaller screens */
+    }
+    
+    .navbar {
+        flex-direction: column; /*Stack navbar vertically*/
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column; /*sack the menu items */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%; /* make each link take the full width */
+    }
+
+    .search-bar {
+        margin-left: 0; /* Align search bar to the left */
+        width: 100%;
+    }
+    .darkmodebutton {
+        top: 300px;
+    }
+}
+
+#particles-js {
+    position: fixed; /* Stays fixed even if the page scrolls */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Ensures it stays behind all content */
+    background: #10375C; /* Optional: fallback background color */
+}

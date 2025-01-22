@@ -1,0 +1,519 @@
+
+/*Navigation Bar */
+body {
+    margin: 0;
+    padding-top: 80px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: navy;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 200;
+}
+
+.dropdown-button:hover .dropdown-menu, .dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-button:hover > a,
+.dropdown-menu li:hover > li > a {
+    background-color: bisque;
+    color: navy;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgb(239, 212, 146);
+    color: navy;
+}
+
+.dropdown-button {
+    position: relative;
+}
+
+nav > ul > li:hover {
+	background-color: bisque;
+	color:white;
+}
+
+.clearfix {
+    clear:both;
+}
+
+.navbar__links {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold;
+    padding: 5px 10px; 
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.navbar__links:hover {
+    background: rgb(239, 212, 146);
+    color: navy;
+}
+
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    background:navy;
+    z-index: 100;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    z-index: 100;
+    background: navy;
+    padding: 6px 13px;
+    gap: 20px; 
+
+}
+
+.navbar > ul {
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%; 
+    padding: 0; 
+    margin: 0; 
+    list-style-type: none; 
+    gap: 50px; 
+    padding-left: 20px;
+
+}
+
+
+.search-bar {
+    margin-left: auto; 
+    display: flex; 
+    align-items: center;
+    gap: 5px; 
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: rgb(239, 212, 146);
+    border: none;
+    color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: white;
+    color: rgb(208, 164, 53);
+}
+
+/*comment section */
+
+.comment-section {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.comment{
+    padding: 13px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+
+}
+
+textarea{
+    width:70%;
+    margin-bottom: 13px;
+    padding: 9px;
+    font-size: 12px;
+    border-radius: 5px;
+    resize:vertical; 
+
+}
+
+textarea:focus {
+    border-color: #82a9e9;
+    box-shadow: 0 0 5px #76b3eb
+}
+
+button {
+    background-color: #101576;
+    color:white; 
+    padding: 8px 10px;
+    border-radius:4px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 10px 10px 15px #63365e80;
+    
+}
+
+button:hover {
+    background-color: #471874;
+    transform: translateY(1px);
+}
+button:active {
+    background-color: #5b9eeb;
+    transform: translateY(1px);
+}
+
+/*Main Content*/
+
+.logo {
+    width: 150px; 
+     height: auto; 
+     margin-right: 20px; 
+     padding-right: 35px;
+ }
+
+ #container{
+    width: 60%;
+    margin:0 auto;
+    padding: 23px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 125px;
+    margin-bottom: 20px;
+ }
+
+h1 {
+    margin-top: 65px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px #0000004d;
+}
+
+span {
+    font-style: italic;
+}
+
+main {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px;
+    
+}
+
+h1, h2, h3 {
+    text-align: center;
+
+}
+
+.image {
+    margin: 20px auto;
+    margin-left: 30px;
+    width: 400px;
+    box-shadow: 10px 10px 15px #00000080;
+     border-radius: 15px; 
+     
+}
+.image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+ 
+table {
+    margin: 20px auto; 
+    width: 80%; 
+}
+
+th, td {
+    padding: 8px; 
+    text-align: center; 
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin:0;
+    padding:0;
+    background-image: url(../image/cool-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+}
+
+h2 {
+    text-shadow: 2px 2px 5px #0000004d;
+margin-right: 20px;
+}
+
+h3{
+    text-shadow: 2px 2px 5px #0000004d;
+}
+
+
+/* Dark Mode Button */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.darkmodebutton {
+    position: fixed;
+    top: 150px;
+    right: 5px;
+    padding: 10px 15px;
+    background-color: #3451e1;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 15px #7791f780;
+
+}
+body.dark-mode #container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+body.darkmodebutton .reaction-buttons {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border:1px solid #444;
+}
+
+.darkmodebutton:hover {
+    background-color: #5766c5;
+}
+/*Like and Dislike Button */
+
+.reaction-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 12px;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.like-btn,
+.dislike-btn {
+    background-color: #023d04;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.dislike-btn {
+    background-color: #6c0610;
+}
+
+@keyframes reactionAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.reaction-active {
+    animation: reactionAnimation 0.3s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.like-btn.reaction-active {
+    background-color: #266329;
+}
+
+.dislike-btn.reaction-active {
+    background-color: #611313;
+}
+
+/*footer*/
+footer {
+    background-color: rgb(6, 6, 95);
+    color: white;
+    padding: 9px 25px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:space-between; 
+    gap: 20px; 
+}
+
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px 0;
+    
+}
+
+.footer-section:nth-child(2) {
+    margin-left: 100px; 
+}
+
+
+.footer-section h4 {
+    color: rgb(229, 168, 15);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.social-links{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 10px; 
+}
+
+.social-links li {
+    margin: 0;
+}
+
+.footer-section .social-links {
+    margin-top: 20px; 
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a, .social-links a {
+    color: rgb(239, 212, 146);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links a:hover, .social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer-section button {
+    padding: 10px;
+    background-color: rgb(239, 212, 146);
+    border: none;
+    color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section button:hover {
+    background-color: white;
+    color: rgb(208, 164, 53);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.social-links::after{
+    content: ""; 
+    display: block;
+    clear: both;
+}
+
+.footer-section.subscribe {
+    background-color: #cce0ff; 
+    color: navy; 
+    padding: 25px; 
+    border-radius: 20px; 
+    box-shadow: 0 15px 20px rgb(208, 164, 53); 
+    margin: 10px 0; 
+    transition: all 0.3s ease; 
+}
+
+.footer-section.subscribe.hovered {
+    background-color: #e0e0e0; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.footer-section form input,
+.footer-section form button {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.Social-image{
+float:left;
+margin-right: 10px;
+height:auto;
+width:50px;
+}

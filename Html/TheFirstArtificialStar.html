@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FairyTopian News</title>
+        <link rel="icon" href="../image/favicon.ico" type="image/x-icon"> <!--Implemented by Zoey-->
+        <link rel="stylesheet" href="../CSS/Space.css">
+        <meta name="description" content="FairyTopian News - Discover parallel universes and cutting-edge scientific discoveries.">
+        <meta name="author" content="Yeva Hakobyan">
+        <style>
+
+.certificate-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #6796dd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#userName, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#userName {
+    width: calc(100% - 20px);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    background-color: navy;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0294d4;
+}
+
+.certificate {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    color: #000;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+        </style>
+    </head>
+
+    <body> <!--File Written by Yeva Hakobyan-->
+        <header class="header">
+            <!-- Logo -->
+            <a href="../Index.html"><img src="../image/FairyTopia.png" id="Logo"></a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776; <!-- Unicode character for the hamburger icon -->
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li class="dropdown-button">
+                        <a href="BingoRing.html" class="navbar__links">Crime</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="BingoRing.html">Illegal Bingo Ring</a></li>
+                            <li><a href="VacuumSmuggler.html">The Vacuum Smuggler</a></li>
+                            <li><a href="GoldfishHacker.html">The Goldfish Hacker</a></li>
+                            <li><a href="PigeonHeist.html">A Pigeon Heist</a></li>
+                            <li><a href="CheeseSmuggling.html">Cheese Smuggling!</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="FakingBreakup.html" class="navbar__links">Showbizz</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="FakingBreakup.html">Faking Breakup</a></li>
+                            <li><a href="HauntedMansion.html">Haunted Mansion</a></li>
+                            <li><a href="LuxuryWedding.html">Luxury Wedding</a></li>
+                            <li><a href="SecretFeud.html">Secret Feud</a></li>
+                            <li><a href="SurprisePregnancy.html">Surprise Pregnancy</a></li>                        
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="BasketballStar.html" class="navbar__links">Sports</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="BasketballStar.html">Basketball Star</a></li>
+                            <li><a href="DaveOrDazzle.html">Dave or Dazzle</a></li>
+                            <li><a href="KangarooBoxing.html">Kangaroo Boxing</a></li>
+                            <li><a href="ToTheMoon.html">To the Moon</a></li>
+                            <li><a href="ZeroGravityJenga.html">Zero Gravity Jenga</a></li>                       
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="MrPickles.html" class="navbar__links">History and Politics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="MrPickles.html">Mr Pickles</a></li>
+                            <li><a href="PalinandtheGreatCommunistPotato.html">Palin and the Great Communist Potato</a></li>
+                            <li><a href="TheGreatKangarooSmackdown.html">The Great Kangaroo Smackdown</a></li>
+                            <li><a href="TheRoyalMiscommunication.html">The Royal Miscommunication</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="AetheriaParallelEarth.html" class="navbar__links">Science And Space</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="AetheriaParallelEarth.html">"The <strong>NEW</strong> Earth"</a></li>
+                            <li><a href="CosmicMessage.html">"Cosmic Message?"</a></li>
+                            <li><a href="InterdimensionalRiftPortal.html">"Portal to Parallel Universes"</a></li>
+                            <li><a href="StarlightHarvest.html">"The Starlight Harvest"</a></li>
+                            <li><a href="TheFirstArtificialStar.html">"The first Artificial Star"</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Students/AboutUs.html" class="navbar__links">About Us</a></li>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button type="button">Go</button>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <div class="content-container">
+            <h1 class = "clearfix">
+            "Quantum Leap: Earth's First 'Artificial Star' Powers a City!"
+            </h1>
+            <article>
+                <h3>In Artashat, Armenia 2150</h3><!--Date and Place-->
+                <p>
+                    In an extraordinary breakthrough, scientists have created Earth's first artificial star, called "Project Solis," capable of generating enough energy to power an entire city. This remarkable creation uses quantum fusion technology to replicate the nuclear reactions that occur in real stars, providing clean, limitless energy with zero emissions.
+                    The implications of Solis are far-reaching. If the technology can be scaled, it could replace fossil fuels and reshape global energy markets. The promise of a new, sustainable power source has already sparked debates about how this innovation will impact existing energy industries and geopolitics. Countries may race to control this energy source, leading to a new era of competition and cooperation.
+                </p>
+                <p>
+                    However, experts caution that the power of the artificial star comes with potential risks. While it could solve many of the world's energy problems, the unknown environmental and economic consequences remain a concern. As the project moves forward, humanity must grapple with the balance between progress and caution in the pursuit of this world-changing technology.
+                </p>
+            </article>
+
+
+            <div class="image-container">
+            <img src = "../image/artificial star.jpg" width = "500" class = "article-images">
+            <img src = "../image/artificial star2.jpg" width = "285" class = "article-images">
+            </div>
+            <hr>
+
+            <div class="certificate-container">
+                <h1>Personalized Star Certificate</h1>
+                <p>Enter your name and create your very own star certificate!</p>
+                <form id="starForm">
+                    <input type="text" id="userName" placeholder="Enter your name" required>
+                    <button type="submit">Generate Certificate</button>
+                </form>
+                <div id="certificate" class="certificate">
+                    <h2>Certificate of Star Ownership</h2>
+                    <p>This certifies that</p>
+                    <h1 id="certificateName"></h1>
+                    <p>is the proud owner of a unique star in the galaxy!</p>
+                    <p>Star ID: <span id="starId"></span></p>
+                    <p>Issued on: <span id="issueDate"></span></p>
+                </div>
+            </div>
+            
+
+            <!-- Like and Dislike Buttons -->
+            <section class="reaction-buttons">
+                <button class="like-btn">👍 Like</button>
+                <span class="like-count">0</span>
+                <button class="dislike-btn">👎 Dislike</button>
+                <span class="dislike-count">0</span>
+            </section>
+            <!-- Comments Section -->
+            <div class="reader-comments">
+                <h1>Write Us Your Comment </h1>
+                <textarea id="newComment" placeholder="Type your comment here"></textarea>
+                <button id="addComment">Add Comment</button>
+                <div id="commentSection">
+                    <h3>Comment Section</h3>
+                </div>
+            </div>
+
+            <table><!--Table With Reporter's Comments-->
+                <thead>
+                    <tr>
+                        <th>REPORTER</th>
+                        <th>COMMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sophia Reynolds</td>
+                        <td><em>"This is truly groundbreaking! The potential to eliminate fossil fuels and transition to a cleaner energy source is exactly what our planet needs right now."</em></td>
+                    </tr>
+                    <tr>
+                        <td>Marcus Valdez</td>
+                        <td><em>"Project Solis feels like science fiction becoming reality. Imagine entire cities running on the energy of a man-made star!"</em></td>
+                    </tr>
+                    <tr>
+                        <td>Lila Chang</td>
+                        <td><em>"Quantum fusion sounds promising, but how will it be regulated? Who will own the rights to this technology?"</em></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>About FairyTopian News</h4>
+                    <p>FairyTopian News brings you fascinating and out-of-this-world stories, keeping you informed and inspired every day. Explore the mysteries of the universe with us!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../Index.html">Home</a></li>
+                        <li><a href="../Html/AetheriaParallelEarth.html">Science and Space</a></li>
+                        <li><a href="../Html/BingoRing.html">Crime</a></li>
+                        <li><a href="../Students/AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.instagram.com/citycollegethess/"><img src="../image/Instagram.png" alt="Instagram" class = "logo-image"></a></li>
+                        <li><a href="https://github.com/andoj3/I2WT-Website-Group6/tree/main/ScienceSpace"><img src="../image/GitHub.png" alt="GitHub" class = "logo-image"></a></li> 
+                    </ul>
+                </div>
+                <div class="footer-section subscribe">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Get fresh <strong>FairyTopian</strong> news every week!</p>
+                    <form action="#" method="POST">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FairyTopian News. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+              //JS for making the subscription box interactive
+    document.addEventListener('DOMContentLoaded', function() {
+    //selects the CSS selector ".footer-section-subscribe"
+    const subscribeBox = document.querySelector('.footer-section.subscribe');
+    
+    //mouseenter event is triggered when hovering over the box
+    subscribeBox.addEventListener('mouseenter', function() {
+        //css class hovered
+    subscribeBox.classList.add('hovered'); 
+    });
+
+    //mouseleave event is triggered, when the mouse is no longer on the subscription box
+    subscribeBox.addEventListener('mouseleave', function() {
+    subscribeBox.classList.remove('hovered');
+    });
+});
+
+
+    //Comment Section 
+    document.getElementById('addComment').addEventListener('click', function () {
+    //acquire the text value
+    const commentText = document.getElementById('newComment').value;
+
+    if (commentText.trim() !== "") { 
+        // div for comment
+        const commentDiv = document.createElement('div');
+        commentDiv.textContent = commentText;
+
+        // comment style to the text
+        commentDiv.classList.add('comment');
+
+        // Append comments to comment section
+        document.getElementById('commentSection').appendChild(commentDiv);
+
+        // New value of text after press
+        document.getElementById('newComment').value = "";
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const likeButtons = document.querySelectorAll('.like-btn');
+    const dislikeButtons = document.querySelectorAll('.dislike-btn');
+    const likeCounts = document.querySelectorAll('.like-count');
+    const dislikeCounts = document.querySelectorAll('.dislike-count');
+
+    // Set random counts on page load
+    dislikeCounts.forEach(count => {
+        const dislikeCount = Math.floor(Math.random() * 100);
+        count.textContent = dislikeCount;
+    });
+
+    likeCounts.forEach((count, index) => {
+        const dislikeCount = parseInt(dislikeCounts[index].textContent);
+        const likeCount = Math.floor(Math.random() * 100) + dislikeCount;
+        count.textContent = likeCount;
+    });
+
+    likeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const likeCount = likeCounts[index];
+            const dislikeButton = dislikeButtons[index];
+            const dislikeCount = dislikeCounts[index];
+
+            if (btn.classList.contains('reaction-active')) {
+                likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                btn.classList.remove('reaction-active');
+            } else {
+                likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                btn.classList.add('reaction-active');
+                if (dislikeButton.classList.contains('reaction-active')) {
+                    dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                    dislikeButton.classList.remove('reaction-active');
+                }
+            }
+        });
+    });
+
+    dislikeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const dislikeCount = dislikeCounts[index];
+            const likeButton = likeButtons[index];
+            const likeCount = likeCounts[index];
+
+            if (btn.classList.contains('reaction-active')) {
+                dislikeCount.textContent = parseInt(dislikeCount.textContent) - 1;
+                btn.classList.remove('reaction-active');
+            } else {
+                dislikeCount.textContent = parseInt(dislikeCount.textContent) + 1;
+                btn.classList.add('reaction-active');
+                if (likeButton.classList.contains('reaction-active')) {
+                    likeCount.textContent = parseInt(likeCount.textContent) - 1;
+                    likeButton.classList.remove('reaction-active');
+                }
+            }
+        });
+    });
+});
+
+
+//humburger functionality
+//selecting the hamburger elemenent with the CSS selector
+const hamburger = document.querySelector('.hamburger');
+//selecting the navbar elemenent with the CSS selector
+const navbar = document.querySelector('.navbar');
+
+//adding a click event listener to the hamburger variable
+hamburger.addEventListener('click', () => {
+navbar.classList.toggle('open');
+});
+
+
+//certificate for owning a star
+document.addEventListener('DOMContentLoaded', () => {
+    const starForm = document.getElementById('starForm');
+    const certificate = document.getElementById('certificate');
+    const userNameInput = document.getElementById('userName');
+    const certificateName = document.getElementById('certificateName');
+    const starId = document.getElementById('starId');
+    const issueDate = document.getElementById('issueDate');
+    const downloadButton = document.getElementById('downloadButton');
+
+    // Generate Star Certificate
+    starForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const userName = userNameInput.value.trim();
+
+        if (userName) {
+            certificateName.textContent = userName;
+            starId.textContent = 'STAR-' + Math.floor(Math.random() * 1000000);
+            issueDate.textContent = new Date().toLocaleDateString();
+
+            certificate.style.display = 'block';
+            downloadButton.classList.remove('hidden');
+        }
+    });
+});
+
+
+        </script>
+        
+    </body>
+</html>
+    

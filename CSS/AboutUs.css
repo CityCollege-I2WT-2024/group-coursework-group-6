@@ -1,0 +1,395 @@
+* Navigation bar */
+body {
+    margin: 0;
+    padding-top: 80px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: navy;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 200;
+}
+
+.dropdown-button:hover .dropdown-menu, .dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-button:hover > a,
+.dropdown-menu li:hover > li > a {
+    background-color: bisque;
+    color: navy;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgb(239, 212, 146);
+    color: navy;
+}
+
+.dropdown-button {
+    position: relative;
+}
+
+nav > ul > li:hover {
+	background-color: bisque;
+	color:white;
+}
+
+.clearfix {
+    clear:both;
+}
+
+.navbar__links {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold;
+    padding: 5px 10px; 
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.navbar__links:hover {
+    background: rgb(239, 212, 146);
+    color: rgb(6, 6, 95);
+}
+
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    background: rgb(6, 6, 95);
+    z-index: 100;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    z-index: 100;
+    background: rgb(6, 6, 95);
+    padding: 6px 13px;
+    gap: 20px; 
+
+}
+
+.navbar > ul {
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%; 
+    padding: 0; 
+    margin: 0; 
+    list-style-type: none; 
+    gap: 50px; 
+
+}
+
+
+.search-bar {
+    margin-left: auto; 
+    display: flex; 
+    align-items: center;
+    gap: 5px; 
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: rgb(239, 212, 146);
+    border: none;
+    color: rgb(6, 6, 95);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: white;
+    color: rgb(208, 164, 53);
+}
+
+/*logo*/
+.logo {
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+/* Mobile response behavior */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /*Stack navbar vertically*/
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column; /*sack the menu items */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%; /* make each link take the full width */
+    }
+
+    .search-bar {
+        margin-left: 0; /* Align search bar to the left */
+        width: 100%;
+    }
+}
+  /* Reset and Base Styles */
+body {
+    background-image: url(../image/cool-background2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: sans-serif;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: #1b1919;
+    transition: all 0.3s ease;
+}
+h2, h3 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: #1b1919;
+    transition: all 0.3s ease;
+}
+
+
+/* Hover Effects */
+h1:hover, h2:hover, h3:hover {
+    color: #6b46c1;
+    text-shadow: 0 0 10px #839570, 0 0 20px #482a8e;
+    transform: scale(1.2);
+}
+
+/* Images */
+img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* News Card Styles */
+.news-card {
+    background: linear-gradient(135deg, #ffffff, #f9f9ff);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.news-card p {
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: "Book Antiqua", serif;
+    text-align: justify;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+/*Footer Done By Yeva Hakobyan*/
+footer {
+    background-color: rgb(6, 6, 95);
+    color: white;
+    padding: 9px 25px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:space-between; 
+    gap: 20px; 
+}
+
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px 0;
+    
+}
+
+.footer-section:nth-child(2) {
+    margin-left: 100px; 
+}
+
+
+.footer-section h4 {
+    color: rgb(229, 168, 15);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.social-links{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 10px; 
+}
+.social-links li {
+    margin: 0;
+}
+
+.footer-section .social-links {
+    margin-top: 20px; 
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a, .social-links a {
+    color: rgb(239, 212, 146);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links a:hover, .social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer-section button {
+    padding: 10px;
+    background-color: rgb(239, 212, 146);
+    border: none;
+    color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section button:hover {
+    background-color: white;
+    color: rgb(208, 164, 53);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.social-links::after{
+    content: ""; 
+    display: block;
+    clear: both;
+}
+
+.footer-section.subscribe {
+    background-color: #cce0ff; 
+    color: navy; 
+    padding: 25px; 
+    border-radius: 20px; 
+    box-shadow: 0 15px 20px rgb(208, 164, 53); 
+    margin: 10px 0; 
+    transition: all 0.3s ease; 
+}
+
+.footer-section.subscribe.hovered {
+    background-color: #e0e0e0; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.footer-section form input,
+.footer-section form button {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.logo-image {
+    float:left;
+    margin-right:10px;
+    height:auto;
+    width:50px;
+}
+
+/*Footer Done By Yeva Hakobyan*/
+
